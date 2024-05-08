@@ -9,4 +9,5 @@ export type Weather = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   sys: any;
   createdAt: string;
+  keysearch?: string;
 };

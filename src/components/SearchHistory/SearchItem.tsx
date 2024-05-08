@@ -126,7 +126,7 @@ const SearchItem = ({
           maxW={"34px"}
           minW={"34px"}
           mr={"10px"}
-          onClick={() => getCountry(weather?.name || "")}
+          onClick={() => getCountry(weather?.keysearch || "")}
         >
           <Image src={btnSearch} objectFit={"cover"} />
         </Button>

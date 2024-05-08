@@ -43,7 +43,6 @@ export const useWeather = () => {
       );
 
       if (response?.data && response?.status === 200) {
-        console.log("response", response);
         setWeather({
           description: response.data.weather[0].description,
           temperature: response.data.main.temp,
@@ -52,6 +51,7 @@ export const useWeather = () => {
           createdAt: formatDate(new Date()),
           name: response.data.name,
           sys: response.data.sys,
+          keysearch: city,
         });
       } else {
         setError("");
